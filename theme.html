@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="<{$xoops_langcode}>">
+  <head>
+    <!--將目前的資料夾名稱，設定為樣板標籤變數 theme_name-->
+    <{assign var=theme_name value=$xoTheme->folderName}>
+
+    <!--載入由使用者設定的各項佈景變數-->
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/get_var.html"}>
+    <!-- 設定網站文字編碼 -->
+    <meta charset="<{$xoops_charset}>">
+    <!-- 套用XOOPS中的網頁索引規則 -->
+    <meta name="robots" content="<{$xoops_meta_robots}>" />
+    <!-- 套用XOOPS中的網站關鍵字設定 -->
+    <meta name="keywords" content="<{$xoops_meta_keywords}>" />
+    <!-- 套用XOOPS中的網站描述設定 -->
+    <meta name="description" content="<{$xoops_meta_description}>" />
+    <!-- 套用XOOPS中的網頁分級設定 -->
+    <meta name="rating" content="<{$xoops_meta_rating}>" />
+    <!-- 套用XOOPS中的網站作者設定 -->
+    <meta name="author" content="<{$xoops_meta_author}>" />
+    <!-- 套用XOOPS中的版權宣告 -->
+    <meta name="copyright" content="<{$xoops_meta_copyright}>" />
+    <!-- 網站的編輯工具 -->
+    <meta name="generator" content="XOOPS" />
+
+    <!-- 網站的標題及標語 -->
+    <title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+
+    <!-- 網站的RSS連結，<{xoAppUrl}>代表網站網址 -->
+    <link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+
+    <!-- 網站圖示設定 -->
+    <link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+    <link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
+
+    <!-- 網站所需的外部樣式檔，<{xoImgUrl}> 代表佈景路徑，通常是[http://網址/themes/佈景名稱] -->
+    <!-- XOOPS本身內建的樣式 -->
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+    <!-- XOOPS中會用到的一些樣式 -->
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/xoops.css}>" />
+    <!-- Bootstrap 樣式表-->
+    <link href="<{xoAppUrl modules/tadtools/bootstrap/css/bootstrap.css}>" rel="stylesheet" media="screen">
+    <!-- 佈景的主樣式 -->
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/style.css}>" />
+
+    <!-- 給模組套用的樣板標籤 -->
+    <{$xoops_module_header}>
+
+    <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.html 那就不需要這一部份 -->
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/theme_css.html"}>
+
+    <!-- 載入 jquery -->
+    <script type='text/javascript'>
+      if(typeof jQuery == 'undefined') {
+      document.write("<script type='text/javascript' src='<{xoAppUrl modules/tadtools/jquery/jquery.js}>'><\/script>");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div id="container_title">
+        <{if $logo_img}>
+          <div id="img_title">
+            <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/logo.html"}>
+          </div>
+        <{else}>
+          <div id="title">
+            <{$xoops_sitename}>
+          </div>
+        <{/if}>
+      </div>
+
+      <div class="row-fluid" id="container_header">
+        <div class="span8" id="container_logo">
+          <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/slider/amazingslider3.html"}>
+          <!--{includeq file="$xoops_rootpath/themes/$theme_name/xotpl/contentslider.html"}-->
+        </div>
+
+        <div class="span4" id="container_block">
+          <{block id=337}>
+        </div>
+      </div>
+
+
+      <div id="container_menu">
+        <div id="container_nav">
+          <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/menu/superfish/menu.html"}>
+        </div>
+      </div>
+
+
+      <div id="container_content">
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/$theme_type.html"}>
+      </div>
+
+
+      <div id="container_foot_img">
+        <img src="<{xoImgUrl images/templatemo_footer_background.gif}>" alt="background">
+      </div>
+
+
+      <div id="container_footer">
+        <{$xoops_footer}>
+      </div>
+
+    </div>
+
+    <!-- 載入 BootStrap所需的javascript -->
+    <script src="<{xoAppUrl modules/tadtools/bootstrap/js/bootstrap.min.js}>"></script>
+
+    <!-- 載入自訂的javascript -->
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/my_js.html"}>
+
+    <!-- 是否顯示樣板變數資訊 -->
+    <{if $show_var==1}>
+      <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/show_var.html"}>
+    <{/if}>
+  </body>
+</html>

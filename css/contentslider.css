@@ -1,0 +1,52 @@
+.sliderwrapper{
+	position: relative; /*leave as is*/
+	overflow: hidden; /*leave as is*/
+	height: 215px;
+	background: #333333;
+}
+
+.contentdiv{
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #333333;
+	height: 100%;
+	filter: alpha(opacity=100);
+	filter: progid:DXImageTransform.Microsoft.alpha(opacity=100);
+	-moz-opacity: 1.0;
+	opacity: 1.0;
+}
+
+.contentdiv img{
+	margin: 0px;
+	padding: 0px;
+}
+
+.pagination2{
+	width: 590px; /*Width of pagination DIV. Total width should equal slider's outer width (400+10+10=420)*/
+	height: 20px;
+	text-align: right;
+	background:#e1e1e1;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.pagination2 a{
+	float: right;
+	display: block;
+	height: 10px;
+	width: 10px;
+	padding: 0px;
+	margin-left: 5px;
+	background: url(../images/templatemo_paging_icon.png) no-repeat;
+	text-decoration: none;
+}
+
+.pagination2 a img{
+	border: none;
+}
+
+.pagination2 a:hover, .pagination2 a.selected{
+	background: url(../images/templatemo_paging_current_icon.png) no-repeat;
+}

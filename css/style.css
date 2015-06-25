@@ -1,0 +1,85 @@
+body{
+  font-family: 微軟正黑體;
+  margin: 0px;
+  padding: 0px;
+  background-color: #B2ADA4;
+}
+
+#container{
+  background-color: white;
+  width: 920px;
+  margin: 0px auto;
+  padding:0px 20px;
+}
+
+#container_title{
+  background-color: white;
+  background-image:url('../images/templatemo_header_background.gif');
+  height: 108px;
+  color: white;
+}
+
+#container_title #img_title{
+  width: 284px;
+  text-align: center;
+}
+
+#container_title #title{
+  width: 284px;
+  height: 108px;
+  padding-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  font-weight:bold;
+}
+
+#container_header{
+  margin:10px auto;
+  padding: 0px;
+}
+
+#container_logo{
+  height: 240px;
+  background-color: #E1E1E1;
+  border: 1px solid #D2D2D2;
+  padding: 0px;
+  margin: 0px;
+}
+
+#container_block{
+  height: 233px;
+  font-size: 13px;
+  background-color: #E1E1E1;
+  border: 1px solid #D2D2D2;
+  padding: 10px;
+  color: #4E4E4E;
+}
+
+#container_block .h3{
+  color: #FE551E;
+  font-size: 2em;
+  font-weight: bold;
+  margin:5px 5px 10px;
+}
+
+#container_menu{
+  background-image: url('../images/templatemo_menu_background.gif');
+  height: 60px;
+  text-align:center;
+}
+
+#container_nav {
+  width: 840px;
+  margin: 0px auto;
+}
+
+#container_nav a:hover {
+  color: #FE551E;
+}
+
+#container_footer{
+  font-size: 12px;
+  text-align: center;
+  line-height: 2;
+  padding: 20px;
+}
