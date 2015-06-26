@@ -25,12 +25,13 @@ body{
 }
 
 #container_title #title{
-  width: 284px;
+  width: 255px;
   height: 108px;
-  padding-top: 50px;
+  padding: 20px 10px 5px ;
   font-size: 40px;
   text-align: center;
-  font-weight:bold;
+  font-weight: bold;
+  line-height: 45px;
 }
 
 #container_header{
@@ -69,7 +70,7 @@ body{
 }
 
 #container_nav {
-  width: 840px;
+  width: 836px;
   margin: 0px auto;
 }
 

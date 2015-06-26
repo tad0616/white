@@ -12,7 +12,7 @@ $theme_kind_arr = 'mix';
 $menu_var_kind = 'all';
 
 //額外顏色設定 如： bootstrap3/themes/light/Cerulean
-$theme_color = '';
+$theme_color = 'bootstrap3';
 
 /*
 tabs-1 版面基礎設定
@@ -27,16 +27,16 @@ $config_enable['theme_type'] = array('enable' => '1', 'min' => '', 'max' => '', 
 $config_enable['theme_width'] = array('enable' => '0', 'min' => '1', 'max' => '960', 'require' => '1', 'default' => '960');
 
 //內容區顏色[theme_type_x.html]
-$config_enable['base_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#FFFFFF');
+$config_enable['base_color'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#FFFFFF');
 
 //左區域顏色[theme_type_1.html]
-$config_enable['lb_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#F2F4FF');
+$config_enable['lb_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#E4E4E4');
 
 //中區域顏色[theme_type_x.html]
-$config_enable['cb_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#FFFFFF');
+$config_enable['cb_color'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#FFFFFF');
 
 //右區域顏色[theme_type_2~4.html]
-$config_enable['rb_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#F4F4F4');
+$config_enable['rb_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#E4E4E4');
 
 //左區域寬度[theme_type_x.html]，值：若 bootstrap 模式，最大值為 12，若 html 模式，則輸入預設左區域寬度，如： 220
 $config_enable['lb_width'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '4');
@@ -189,19 +189,19 @@ tabs-6 導覽工具列
 $config_tabs[6] = 1;
 
 //導覽工具列位置[navbar.html]，值： navbar-fixed-top （固定上方）, navbar-fixed-bottom （固定下方）, navbar-static-top （滑動圖片上方）, navbar-static-bottom （滑動圖片下方）, default （佈景預設值）, not-use （不使用）
-$config_enable['navbar_pos'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'default');
+$config_enable['navbar_pos'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'default');
 
 //導覽工具列 漸層顏色(top)[theme_css_navbar.html]
-$config_enable['navbar_bg_top'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#54b4eb');
+$config_enable['navbar_bg_top'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#B2ADA4');
 
 //導覽工具列 漸層顏色(bottom)[theme_css_navbar.html]
-$config_enable['navbar_bg_bottom'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#2fa4e7');
+$config_enable['navbar_bg_bottom'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#B2ADA4');
 
 //導覽工具列 連結區塊底色[theme_css_navbar.html]
-$config_enable['navbar_hover'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#1684c2');
+$config_enable['navbar_hover'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#827E78');
 
 //上傳導覽列背景圖[navbar.html]，值：可指定置於「themes/佈景/images/nav_bg/」下的某一檔案名稱
-$config_enable['navbar_img'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+$config_enable['navbar_img'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'menu_background.gif');
 
 //導覽工具列 文字顏色[theme_css_navbar.html]
 $config_enable['navbar_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#FFFFFF');
