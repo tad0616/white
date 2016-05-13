@@ -13,7 +13,7 @@
         <{assign var=row value="row"}>
         <{assign var=span value="col-md-"}>
     <{else}>
-        <{assign var=tpl_folder value="themes_tpl"}>
+        <{assign var=tpl_folder value="themes3_tpl"}>
         <{assign var=row value="row-fluid"}>
         <{assign var=span value="span"}>
     <{/if}>
@@ -23,13 +23,13 @@
     <!-- 網站的標題及標語 -->
     <title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
 
-    <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/link_css.html"}>
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/link_css.html"}>
 
     <!-- 給模組套用的樣板標籤 -->
     <{$xoops_module_header}>
 
     <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.html 那就不需要這一部份 -->
-    <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/theme_css.html"}>
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/theme_css.html"}>
 
     <!-- 載入 jquery -->
     <style type="text/css">
@@ -45,7 +45,7 @@
       <div id="container_title">
         <{if $logo_img}>
           <div id="img_title">
-            <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/logo.html"}>
+            <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/logo.html"}>
           </div>
         <{else}>
           <div id="title">
@@ -54,12 +54,12 @@
         <{/if}>
       </div>
 
-      <div class="<{$row}>" id="container_header">
-        <div class="<{$span}>8" id="container_logo">
+      <div class="row" id="container_header">
+        <div class="col-sm-8 col-md-8" id="container_logo">
           <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/menu/responsive_slide.html"}>
         </div>
 
-        <div class="<{$span}>4" id="container_block">
+        <div class="col-sm-4 col-md-4" id="container_block">
           <{block id=$block_id}>
         </div>
       </div>
@@ -67,13 +67,13 @@
 
       <div id="container_menu">
         <div id="container_nav" class="text-center">
-          <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/navbar.html"}>
+          <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/navbar.html"}>
         </div>
       </div>
 
 
       <div id="container_content">
-        <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/$theme_type.html"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/$theme_type.html"}>
       </div>
 
 
@@ -89,10 +89,10 @@
     </div>
 
     <!-- 載入 BootStrap所需的javascript -->
-    <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/bootstrap_js.html"}>
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/bootstrap_js.html"}>
 
     <!-- 載入自訂的javascript -->
-    <{includeq file="$xoops_rootpath/modules/tadtools/$tpl_folder/my_js.html"}>
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/my_js.html"}>
 
     <!-- 是否顯示樣板變數資訊 -->
     <{if $show_var==1}>

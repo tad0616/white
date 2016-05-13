@@ -39,10 +39,10 @@ $config_enable['cb_color'] = array('enable' => '0', 'min' => '', 'max' => '', 'r
 $config_enable['rb_color'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#E4E4E4');
 
 //左區域寬度[theme_type_x.html]，值：若 bootstrap 模式，最大值為 12，若 html 模式，則輸入預設左區域寬度，如： 220
-$config_enable['lb_width'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '4');
+$config_enable['lb_width'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '3');
 
 //右區域寬度[theme_type_2~8.html]，值：若 bootstrap 模式，最大值為 12，若 html 模式，則輸入預設右區域寬度，如： 220
-$config_enable['rb_width'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '4');
+$config_enable['rb_width'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '3');
 
 //中左區塊寬度[無]
 $config_enable['clb_width'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '49%');
